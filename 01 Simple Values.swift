@@ -33,17 +33,22 @@ let oranges = 5
 let appleSummary = "I have \(apples) apples."
 let fruitSummary = "I have \(apples + oranges) piece of fruit."
 
+// Examples
+let numLabel: String = "Pi"
 let pi: Double = 3.1415926535
-let digitsOfPi = "The first 11 digits of pi are \(pi)"
+let digitsOfPi = "The first 11 digits of \(numLabel) are \(pi)"
+print(digitsOfPi)
 
 let name: String = "Mars"
 let greeting = "Hello, \(name)!"
 
 // Multiple Lines
+// multi-line string literal content must begin on a new line
 let quotation = """
 I said "I have \(apples) apples."
 And then I said "I have \(apples + oranges) pieces of fruit."
 """
+print(quotation)
 
 // Arrays and Dictionaries
 var fruits = ["strawberries", "limes", "tangerines"]
@@ -57,11 +62,13 @@ var occupations = [
     "Kaylee": "Mechanic",
 ]
 occupations["Jayne"] = "Public Relations"
+print(occupations)
 
 // An Empty array and dictionary - initializer syntax
 let emptyArray: [String] = []
 let emptyDictionary: [String: Float] = [:]
 
-// If type information can be inferred, you can write an empty array as
+// If type information can be inferred
+// you can write an empty array as
 fruits = []
 occupations = [:]
